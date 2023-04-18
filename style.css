@@ -49,11 +49,6 @@ body{
     overflow-y: scroll; 
   }
 
-  button{
-    
-  }
-
-/* CSS */
 button {
   align-items: center;
   appearance: none;
