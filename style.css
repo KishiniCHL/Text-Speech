@@ -14,6 +14,10 @@ body{
 
 }
 
+#main-section {
+  display: flex;
+  gap: 10%;
+}
 
 #main-title{
     margin:5vh 0 7vh 0;
@@ -22,7 +26,6 @@ body{
   margin-bottom: 5vh;
 }
 #container{
-    /* background-color: aquamarine; */
     width: 100vh;
     padding: 5vh;
     box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;}
@@ -34,18 +37,19 @@ body{
     flex-direction: column;
 }
 
-.langues{
+/* .langues{
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* width: ; */
-}
+} */
 
-.langues select{
+/* .langues select{
     width: 30vh;
     border: 1px solid green;
     border-radius: 5px;
-}
+} */
+
+ul {margin-bottom: 3vh; margin-top: 3vh;}
 
 #output {
     height: 200px; 
@@ -110,4 +114,8 @@ button:active {
     z-index: -1;
     width: 100%; 
     display: none;
+}
+
+.none {
+  display: none;
 }

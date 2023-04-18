@@ -70,3 +70,10 @@ if ('webkitSpeechRecognition' in window) {
 	alert('Web Speech API is not supported in this browser.');
   }
   
+// keywords button
+let btnKeywords = document.getElementById('btn-keywords');
+let divKeywords = document.getElementById('keywords');
+
+btnKeywords.addEventListener('click', () => {
+	divKeywords.classList.remove('none');
+})
