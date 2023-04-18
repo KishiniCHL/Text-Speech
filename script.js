@@ -19,7 +19,9 @@ if ('webkitSpeechRecognition' in window) {
 	let fruitGifTable = {
 	  "banane": "#bananaRain",
 	  "pomme": "#appleRain",
-	  "orange": "#orangeRain"
+	  "orange": "#orangeRain",
+	  "fraise": "#fraiseRain",
+	  "cerise": "#ceriseRain",
 	};
   
 	document.querySelector('#start-bouton').addEventListener('click', () => {

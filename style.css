@@ -100,7 +100,7 @@ button:active {
 }
 
 
-#bananaRain{
+#bananaRain, #ceriseRain, #fraiseRain{
     position: fixed;
     top: 0;
     left: 0;
