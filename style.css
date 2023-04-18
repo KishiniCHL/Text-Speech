@@ -49,6 +49,11 @@ body{
     overflow-y: scroll; 
   }
 
+  #output p {
+    display: block;
+  }
+  
+
 button {
   align-items: center;
   appearance: none;
@@ -95,16 +100,11 @@ button:active {
 }
 
 
-#fruits-rain {
+#bananaRain{
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
     z-index: -1;
-    background-image: url('fruits.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    pointer-events: none;
-  }
-  
+    width: 100%; 
+    display: none;
+}

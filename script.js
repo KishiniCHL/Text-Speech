@@ -4,18 +4,23 @@ if ('webkitSpeechRecognition' in window) {
 	recognition.interimResults = true;
   
 	let colorTable = {
-		"bleu": "blue",
-		"rouge": "red",
-		"vert": "green",
-		"jaune": "yellow",
-		"rose": "pink",
-		"violet": "purple",
-		"orange": "orange",
-		"gris": "gray",
-		"noir": "black",
-		"blanc": "white"
-	  };
-	  
+	  "bleu": "blue",
+	  "rouge": "red",
+	  "vert": "green",
+	  "jaune": "yellow",
+	  "rose": "pink",
+	  "violet": "purple",
+	  "orange": "orange",
+	  "gris": "gray",
+	  "noir": "black",
+	  "blanc": "white"
+	};
+  
+	let fruitGifTable = {
+	  "banane": "#bananaRain",
+	  "pomme": "#appleRain",
+	  "orange": "#orangeRain"
+	};
   
 	document.querySelector('#start-bouton').addEventListener('click', () => {
 	  recognition.start();
@@ -33,11 +38,22 @@ if ('webkitSpeechRecognition' in window) {
 		}
 	  }
   
+	  for (let fruit in fruitGifTable) {
+		let fruitGif = document.querySelector(fruitGifTable[fruit]);
+		if (fruitGif) { 
+		  if (result.toLowerCase().includes(fruit)) {
+			fruitGif.style.display = "block";
+		  } else {
+			fruitGif.style.display = "none";
+		  }
+		}
+	  }
+  
 	  let output = document.querySelector('#output');
 	  let newParagraph = document.createElement("p");
 	  newParagraph.textContent = result;
 	  output.appendChild(newParagraph);
-	  
+  
 	};
   
 	document.querySelector('#stop-bouton').addEventListener('click', () => {
