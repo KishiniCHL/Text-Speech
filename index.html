@@ -8,22 +8,35 @@
     <title>Just talk</title>
 </head>
 <body>
+    <h1 id="main-title">Dis des couleurs ou des fruits avec ta belle voix !</h1>
+    <p id="precision">Attention : Nous vous conseillons fortement de tester cette page utilisant Web Speech API sur navigateur Google Chrome.</p>
     <section id="container">
         <div id="button-container">
-            <button id="start-button">Start Speech Recognition</button>
-            <button id="stop-button">Stop Speech Recognition</button>
-        </div>
-       
-        <div>
-            <div class="langues">
-                <p>Languages</p>
-                <select name="langue" id="languages">
-
-                </select>
-            </div>
+            <button id="start-bouton">Lancer Speech Recognition</button>
+            <button id="stop-bouton">Stop</button>
+            <button id="reset-bouton">Reset le contenu</button>
         </div>
         <div id="output"></div>
     </section>
+
+    <section>
+        <div>
+            <img src="img/raining_bananas.gif" alt="raining bananas" id="bananaRain">
+        </div>
+        <div>
+            <img src="img/cherry.gif" alt="raining cherry" id="ceriseRain">
+        </div>
+        <div>
+            <img src="img/strawberry.gif" alt="raining strawberry" id="fraiseRain">
+        </div>
+        <div>
+            <img src="img/apples_rain.gif" alt="raining apples" id="appleRain">
+        </div>
+        <div>
+            <img src="img/lemon.gif" alt="falling lemons" id="citronRain">
+        </div>
+    </section>
+    
     <script src="script.js"></script>
 </body>
 </html>
